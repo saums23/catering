@@ -1,0 +1,72 @@
+*{box-sizing: border-box;}
+
+body{margin: 0px;font-family: "Abel", sans-serif;}
+
+#logo{float: left; padding-left: 20px;padding-top: 20px;font-size: 30px;font-weight: 700;}
+
+#menu{float: right;list-style-type: none;}
+
+#menu li{
+	display: inline-block;
+	padding: 10px;	
+	font-size: 20px;
+	margin-right: 20px;
+}
+
+
+#menu li:hover{background-color: lightgrey; border-radius: 10px;}
+
+li a{text-decoration: none;color: grey;}
+
+
+#mainImg{
+	clear: both;
+    background-image: url("https://whatsfordinner.com/wp-content/uploads/2017/02/Grilled-Vegetable-Wrap_main.jpg");
+    
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    width: 100%;
+}
+
+
+#imgTxt{
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+	font-size: 20px;
+}
+
+
+.section{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.sectionImg{flex: 0 1 30%; height: 500px;margin: 20px;}
+.sectionTxt{flex:0 1 30%;margin: 20px;}
+.title{text-align: center;}
+.menuItems{text-align: left;}
+
+h1,h3,h4{letter-spacing: 3px;}
+hr{width: 80%;text-align: center;border: 0;border-top: 1px solid #eee;}
+
+.contact{width: 1000px;margin: auto; margin-top: 80px;margin-bottom: 80px;}
+
+input{width: 80%;border:0;border-bottom: 1px solid #eee;margin:10px; padding: 10px;}
+#submit{border-radius: 10px;}
+
+footer{height: 100px;width: 100%;background-color: #F1F1F1; text-align: center;padding-top: 50px;}
+
+
+@media screen and (max-width: 768px)
+{
+	.sectionTxt{flex: 0 1 80%;}
+    .section{margin: 20px;}
+	.contact {width: 80%;text-align: justify; margin: 40px;}
+} 
